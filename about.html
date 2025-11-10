@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About</title>
-</head>
-<body>
-	<h1>About</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Simple Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Minimal inline styles to keep the page presentable even if style.css is simple */
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+      }
+      .nav a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: inherit;
+      }
+      .hero {
+        background: #f7f7f7;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+      .team {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .member {
+        flex: 1 1 200px;
+        background: #fff;
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+      }
+      .footer {
+        text-align: center;
+        padding: 1rem 0;
+        color: #666;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+      }
+      @media (max-width: 600px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .nav a {
+          margin-left: 0;
+          margin-right: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container header">
+      <h1>About</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Who we are</h2>
+        <p>
+          We're a small team building useful examples and learning resources
+          about Git and web development. This site demonstrates simple static
+          pages and good practices for beginners.
+        </p>
+      </section>
+
+      <section>
+        <h3>Our mission</h3>
+        <p>
+          Make clear, practical tutorials and examples that help people learn
+          version control and web basics quickly.
+        </p>
+      </section>
+
+      <section>
+        <h3>Team</h3>
+        <div class="team">
+          <div class="member">
+            <strong>Alice</strong>
+            <p>Content &amp; docs</p>
+          </div>
+          <div class="member">
+            <strong>Bob</strong>
+            <p>Examples &amp; code</p>
+          </div>
+          <div class="member">
+            <strong>Carol</strong>
+            <p>Design &amp; UX</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Contact</h3>
+        <p>
+          For suggestions or corrections, use the
+          <a href="contact.html">contact page</a>.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2025 Simple Site. Built with care.</p>
+      </footer>
+    </main>
+  </body>
 </html>
